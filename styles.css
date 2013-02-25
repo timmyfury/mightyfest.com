@@ -11,12 +11,13 @@ header {
 }
 
 h1 {
-  font-size: 143px;
+  background: url("./mighty-black.jpg") left center no-repeat;
+  font-size: 125px;
   font-weight: 200;
   margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
-  width: 700px;
+  padding: 20px 0 20px 136px;
+  text-align: left;
+  width: 625px;
 }
 
 section {
@@ -71,6 +72,16 @@ h3 em {
   line-height: 34px;
 }
 
+h4 {
+	margin: 0;
+	padding: 10px 20px 20px;
+}
+
+p {
+	margin: 0;
+	padding: 0 20px 20px 40px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -97,21 +108,81 @@ img {
 
 @media screen and (max-width: 480px) {
 
+
+  header {
+    background: #FFF;
+  }
+
+  h1 {
+    background: url("./mighty-white.jpg") center center no-repeat;
+    padding: 35px 0;
+    text-indent: -10000px;
+    width: 480px;
+    height: 289px;
+  }
+  
+  section {
+    width: 480px;
+  }
+
+  article {
+    margin: 0;
+    padding: 0 0 20px 0;
+  }
+
+  h3 {
+    font-size: 50px;
+    line-height: 54px;
+    margin: 0;
+    padding: 0 20px 0;
+  }
+
+  h3 em {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  h3 em {
+    display: block;
+    text-align: left;
+    width: auto;
+  }
+
+  p {
+    padding: 0 20px 20px 20px;
+  }
+
+  ul {
+    clear: both;
+    padding: 10px 20px 10px;
+  }
+
+  img {
+    width: 200px;
+  }
+  
+
 }
 @media screen and (max-width: 320px) {
+
+
   h1 {
-    font-size: 56px;
-    padding: 20px 0;
-    width: 280px;
+    width: 320px;
   }
+
+
 
   section {
     width: 320px;
   }
 
+
   h2 {
-    height: 145px;
     padding: 10px 20px;
+  }
+
+  .thors h2 {
+    height: 145px;
   }
 
   h3 em,
@@ -125,9 +196,12 @@ img {
   }
 
   h3 em {
+    display: inline-block;
     font-size: 14px;
     line-height: 26px;
+    text-align: right;
   }
+
 
   ul {
     padding: 0 20px 10px;
