@@ -1,1 +1,6 @@
 permalink: /:title
+exclude:
+  - mighty-facebook.png
+  - mighty-logo.psd
+  - Gemfile
+  - Gemfile.lock
