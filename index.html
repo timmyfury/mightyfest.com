@@ -1,259 +1,103 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  
-    <title>Mighty Fest</title>
+---
+layout: default
+---
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="A place where only the mightiest go" />
+<section class="thors">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+	{% for post in site.posts %}
+  <article>
+    <img src="{{ post.thor_photo }}" alt="Thor {{ post.thor }}"><h2><em>{{ post.date | date: '%Y' }}:</em> {{ post.title }}</h2>
+    <h3><em>Thor:</em> {{ post.thor }}</h3>
+    <ul>
+      {% for event in post.events %}
+      <li><em>{{ event.name }}:</em> {{ event.winner }}</li>
+      {% endfor %}
+    </ul>
+  </article>
+  {% endfor %}
 
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-startup-image" href="/apple-touch-startup-image-320x460.png">
+</section>
 
-    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" charset="utf-8">
-  </head>
+<section class="songs">
+  <article>
+    <h2>The Mighty Song</h2>
+    <h4>Written and Performed by Fred DiMeglio and Matt Thomason for the first time at Mighty Fest IV at Mighty House.</h4>
+    <p>
+      Oh there's a place that I know,<br />
+      Where only the mightiest go,<br />
+      And oh what a stone they'll throw,
+    </p>
+    <p>
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
+    </p>
+    <p>
+      (rambling interlude)
+    </p>
+    <p>
+      So don your mightiest vest,<br />
+      And bare your mightiest chest,<br />
+      and come on our mighty quest!
+    </p>
+    <p>
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
+    </p>
+  </article>
 
-  <body>
-    <header>
-      <h1>Mighty Fest</h1>
-    </header>
-
-    <section class="thors">
-      <article>
-        <img src="thor/2013-Kevin-McClellan.jpg" alt="Thor 2013 Kevin McClellan"><h2><em>2013:</em> Mighty Fest X</h2>
-        <h3><em>Thor:</em> Kevin McClellan</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Jordan Wagner</li>
-          <li><em>Storming Jotenheim:</em> Kevin McClellan</li>
-          <li><em>Tug of War:</em> Geoff Kershaw</li>
-          <li><em>Odin's Gallows:</em> Mo Mack and Dan Bryden</li>
-          <li><em>The Wheel:</em> Kevin McClellan</li>
-          <li><em>Quest for Mjollnir:</em> Kevin McClellan</li>
-        </ul>
-      </article>
-
-      <article> <!-- A Might to Remember -->
-        <img src="thor/2012-Matt-Savoia.jpg" alt="Thor 2012 Matt Savoia"><h2><em>2012:</em> Mighty Fest IX</h2>
-        <h3><em>Thor:</em> Matt Savoia</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Jordan Wagner</li>
-          <li><em>Wall Endurance:</em> Matt Savoia</li>
-          <li><em>Storming Jotenheim:</em> Kevin McClellan</li>
-          <li><em>Tug of War:</em> Chris Campanelle</li>
-          <li><em>The Wheel:</em> Zaina Keenan</li>
-          <li><em>Boast:</em> Roger McBride</li>
-          <li><em>Plank Endurance:</em> Matt Savoia</li>
-        </ul>
-      </article>
-
-      <article>
-        <img src="thor/2011-Tia-Platt.jpg" alt="Thor 2011 Tia Platt">
-        <h2><em>2011:</em> Mighty Fest VIII</h2>
-        <h3><em>Thor:</em> Tia Platt</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Geoff Kershaw</li>
-          <li><em>Wall Endurance:</em> Bernard Downey</li>
-          <li><em>The Wheel:</em> Tia Platt</li>
-          <li><em>Arm Wrestling:</em> Tim Carl</li>
-          <li><em>Hag Drag:</em> Dan Fitz</li>
-          <li><em>Boast:</em> Tia Platt</li>
-        </ul>
-      </article>
-
-      <article>
-        <img src="thor/2010-Geoff-Kershaw.jpg" alt="Thor 2010 Geoff Kershaw">
-        <h2><em>2010:</em> Mighty Fest VII</h2>
-        <h3><em>Thor:</em> Geoff Kershaw</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Kyle Quartermus</li>
-          <li><em>Wall Endurance:</em> Charlotte Horton</li>
-          <li><em>The Wheel:</em> Monica Keenan</li>
-          <li><em>Trial by Arms:</em> Geoff Kershaw</li>
-          <li><em>Trial By Feet:</em> Drew Gobrecht</li>
-          <li><em>Trial By Boast:</em> Jorgen</li>
-          <li><em>Ring of Fire:</em> Geoff Kershaw</li>
-        </ul>
-      </article>
-
-      <article>
-        <img src="thor/2009-Bony.jpg" alt="Thor 2009 Bony">
-        <h2><em>2009:</em> Mighty Fest VI</h2>
-        <h3><em>Thor:</em> Bony</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Tim Crowe</li>
-          <li><em>Hag Drag:</em> Bony</li>
-          <li><em>Arm Wrestling:</em> Zack Driver</li>
-          <li><em>Eye of the Beast:</em> Bony</li>
-          <li><em>Wall Endurance:</em> Mary DiMeglio</li>
-          <li><em>Wooing:</em> JP Boudwin</li>
-        </ul>
-      </article>
-
-      <article> <!-- There can be only fun -->
-        <img src="thor/2008-Geoff-Kershaw.jpg" alt="Thor 2008 Geoff Kershaw">
-        <h2><em>2008:</em> Mighty Fest V</h2>
-        <h3><em>Thor:</em> Geoff Kershaw</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Geoff Kershaw</li>
-          <li><em>Wall Endurance:</em> Matt Savoia</li>
-          <li><em>Trial By Arms:</em> Geoff Kershaw</li>
-          <li><em>Trial By Feet:</em> Drew Gobrecht</li>
-          <li><em>Trial By Boast:</em> Bryan Neuber</li>
-          <li><em>Jar of Mystery:</em> Fred DiMeglio</li>
-        </ul>
-      </article>
-
-      <article>
-        <img src="thor/2007-Geoff-Trout.jpg" alt="Thor 2007 Geoff Trout">
-        <h2><em>2007:</em> Mighty Fest IV</h2>
-        <h3><em>Thor:</em> Geoff Trout</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Geoff Kershaw</li>
-          <li><em>Wall Endurance:</em> Jess Barrett</li>
-          <li><em>Trial By Arms:</em> Nik Marziani</li>
-          <li><em>Trial By Feet:</em> Drew Gobrecht</li>
-          <li><em>Trial By Boast:</em> Geoff Trout</li>
-          <li><em>Jar of Mystery:</em> Dan Cannon</li>
-          <li><em>Ring of Fire:</em> Geoff Trout</li>
-        </ul>
-      </article>
-
-      <article>
-        <img src="thor/2006-Fred-DiMeglio.jpg" alt="Thor 2006 Fred DiMeglio">
-        <h2><em>2006:</em> Mighty Fest III</h2>
-        <h3><em>Thor:</em> Fred DiMeglio</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Matt McJersey</li>
-          <li><em>Wall Endurance:</em> Fred DiMeglio</li>
-          <li><em>Drawing of Lots:</em> Ian Gallagher</li>
-          <li><em>Arm Wrestling:</em> Andrew Hall</li>
-          <li><em>Test of Wills:</em> Geoff Kershaw</li>
-          <li><em>Boasting:</em> Zack Driver</li>
-          <li><em>Ring of Fire:</em> Fred DiMeglio</li>
-        </ul>
-      </article>
-
-      <article>
-        <img src="thor/2005-Mark-Keenan.jpg" alt="Thor 2005 Mark Keenan">
-        <h2><em>2005:</em> Mighty Fest II</h2>
-        <h3><em>Thor:</em> Mark Keenan</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Andrew Rosenberg</li>
-          <li><em>Ice Endurance:</em> Christopher Mabry</li>
-          <li><em>Drawing of Lots:</em> Andrew Rosenberg</li>
-          <li><em>Arm Wrestling:</em> Mark Keenan</li>
-          <li><em>Test of Wills:</em> Mark Keenan</li>
-          <li><em>Boasting:</em> Monica Keenan</li>
-          <li><em>Endurance of Blows:</em> Mark Keenan</li>
-        </ul>
-      </article>
-
-      <article>
-        <img src="thor/2004-Dave-Keenan.jpg" alt="2004 Dave Keenan">
-        <h2><em>2004:</em> Mighty Fest I</h2>
-        <h3><em>Thor:</em> David Keenan</h3>
-        <ul>
-          <li><em>Rock Throw:</em> Andrew Rose</li>
-          <li><em>Ice Endurance:</em> David Keenan</li>
-          <li><em>Arm Wrestling:</em> Roger McBride</li>
-          <li><em>Riddles:</em> Kyle Quartermus</li>
-          <li><em>Wall Endurance:</em> David Keenan</li>
-          <li><em>Betting:</em> David Keenan</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="songs">
-      <article>
-        <h2>The Mighty Song</h2>
-        <h4>Written and Performed by Fred DiMeglio and Matt Thomason for the first time at Mighty Fest IV at Mighty House.</h4>
-        <p>
-          Oh there's a place that I know,<br />
-          Where only the mightiest go,<br />
-          And oh what a stone they'll throw,
-        </p>
-        <p>
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
-        </p>
-        <p>
-          (rambling interlude)
-        </p>
-        <p>
-          So don your mightiest vest,<br />
-          And bare your mightiest chest,<br />
-          and come on our mighty quest!
-        </p>
-        <p>
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
-        </p>
-      </article>
-
-      <article>
-        <h2>The Mighty Song: 10th Anniversary Edition</h2>
-        <h4>Basically the same with a few verses added to commemorate this historic year.</h4>
-        <p>
-          Oh there's a place that I know,<br />
-          Where only the mightiest go,<br />
-          And oh what a stone they'll throw,
-        </p>
-        <p>
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
-        </p>
-        <p>
-          Ten long years ago! <br />
-          Through lightning, thunder and snow!<br />
-          Who knew our fest would grow into a<br />
-          MIGHTY FEST!
-        </p>
-        <p>
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
-        </p>
-        <p>
-          (rambling interlude)
-        </p>
-        <p>
-          So don your mightiest vest,<br />
-          And bare your mightiest chest,<br />
-          and come on our mighty quest!
-        </p>
-        <p>
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
-        </p>
-        <p>
-          It's Thor we must impress!<br />
-          The gods expect no less!<br />
-          The ultimate Mighty test!
-        </p>
-        <p>
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
-          It's a MIGHTY FEST!<br />
-          It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
-        </p>
-      </article>
-    </section>
-
-  </body>
-</html>
+  <article>
+    <h2>The Mighty Song: 10th Anniversary Edition</h2>
+    <h4>Basically the same with a few verses added to commemorate this historic year.</h4>
+    <p>
+      Oh there's a place that I know,<br />
+      Where only the mightiest go,<br />
+      And oh what a stone they'll throw,
+    </p>
+    <p>
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
+    </p>
+    <p>
+      Ten long years ago! <br />
+      Through lightning, thunder and snow!<br />
+      Who knew our fest would grow into a<br />
+      MIGHTY FEST!
+    </p>
+    <p>
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
+    </p>
+    <p>
+      (rambling interlude)
+    </p>
+    <p>
+      So don your mightiest vest,<br />
+      And bare your mightiest chest,<br />
+      and come on our mighty quest!
+    </p>
+    <p>
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
+    </p>
+    <p>
+      It's Thor we must impress!<br />
+      The gods expect no less!<br />
+      The ultimate Mighty test!
+    </p>
+    <p>
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!<br />
+      It's a MIGHTY FEST!<br />
+      It's a MIGHTY MIGHTY MIGHTY MIGHTY FEST!
+    </p>
+  </article>
+</section>
