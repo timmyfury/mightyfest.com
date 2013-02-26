@@ -20,6 +20,13 @@ h1 {
   width: 625px;
 }
 
+h1 a,
+h1 a:hover,
+h1 a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
 section {
   margin: 0 auto;
   text-align: left;
@@ -48,6 +55,13 @@ h2 {
   font-size: 40px;
   margin: 0 0 10px 0;
   padding: 10px 20px;
+}
+
+h2 a,
+h2 a:hover,
+h2 a:focus {
+  color: #fff;
+  text-decoration: none;
 }
 
 h3 em,
@@ -85,6 +99,10 @@ p {
 ul {
   list-style-type: none;
   margin: 0;
+  padding: 0 20px 20px;
+}
+
+.thor ul {
   padding: 0 20px 0;
 }
 
@@ -100,10 +118,14 @@ li em {
   line-height: 20px;
 }
 
-img {
+.thor img {
   float: right;
   margin: 0 0 0 20px;
   width: 250px;
+}
+
+.details img {
+  max-width: 500px;
 }
 
 @media screen and (max-width: 480px) {
@@ -157,7 +179,7 @@ img {
     padding: 10px 20px 10px;
   }
 
-  img {
+  .thor img {
     width: 200px;
   }
   
@@ -212,7 +234,7 @@ img {
     line-height: 20px;
   }
 
-  img {
+  .thor img {
     background: #000;
     height: 165px;
     width: auto;

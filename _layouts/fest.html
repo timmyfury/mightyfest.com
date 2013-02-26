@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+{% assign post = page %}
+
+<section class="thors">
+  <article class="thor">
+    <img src="/i/{{ post.thor_photo }}" alt="Thor {{ post.thor }}">
+    <h2><a href="{{ post.url }}"><em>{{ post.date | date: '%Y' }}:</em> {{ post.title }}</a></h2>
+    <h3><em>Thor:</em> {{ post.thor }}</h3>
+  </article>
+
+  {% if post.slogan or post.fest_date or post.location or post.ticket_photo or post.shirt_photo %}
+  <article class="details">
+    <h2>Details</h2>
+    <ul>
+      {% if post.slogan %}<li><em>Slogan:</em> {{ post.slogan }}</li>{% endif %}
+      {% if post.fest_date %}<li><em>Date:</em> {{ post.fest_date }}</li>{% endif %}
+      {% if post.location %}<li><em>Location:</em> {{ post.location }}</li>{% endif %}
+      {% if post.ticket_photo %}<li><em>Ticket:</em> <img src="/i/{{ post.ticket_photo }}" /></li>{% endif %}
+      {% if post.shirt_photo %}<li><em>T-Shirt:</em> <img src="/i/{{ post.shirt_photo }}" /></li>{% endif %}
+    </ul>
+  </article>
+  {% endif %}
+
+  <article class="thor-board">
+      <h2>Thor Board</h2>
+      <ul>
+        {% for event in post.events %}
+        <li><em>{{ event.name }}:</em> {{ event.winner }}</li>
+        {% endfor %}
+      </ul>
+  </article>
+</section>
