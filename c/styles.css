@@ -27,6 +27,42 @@ h1 a:focus {
   text-decoration: none;
 }
 
+header nav {
+  margin: 0 auto;
+  width: 700px;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 20px 20px;
+  padding: 0;
+}
+
+header ul li a {
+  background: #FFF;
+  border: #FFF solid 1px;
+  color: #000;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 260px;
+}
+
+header ul li a:hover,
+header ul li a:focus {
+  background: #000;
+/*  border: #FFF solid 1px;*/
+  color: #FFF;
+}
+
+
 section {
   margin: 0 auto;
   text-align: left;
