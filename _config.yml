@@ -4,3 +4,4 @@ exclude:
   - mighty-logo.psd
   - Gemfile
   - Gemfile.lock
+  - README.md
