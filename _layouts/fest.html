@@ -11,7 +11,7 @@ layout: default
     <h3><em>Thor:</em> {{ post.thor }}</h3>
   </article>
 
-  {% if post.slogan or post.fest_date or post.location or post.exotic_meat or post.ticket_photo or post.shirt_photo or post.poster_photo %}
+  {% if post.slogan or post.fest_date or post.location or post.exotic_meat or post.ticket_photo or post.shirt_photo or post.poster_photo or post.bandana_photo %}
   <article class="details">
     <h2>Details</h2>
     <ul>
@@ -22,6 +22,7 @@ layout: default
       {% if post.ticket_photo %}<li><em>Ticket:</em> <img src="/i/{{ post.ticket_photo }}" /></li>{% endif %}
       {% if post.shirt_photo %}<li><em>T-Shirt:</em> <img src="/i/{{ post.shirt_photo }}" /></li>{% endif %}
       {% if post.poster_photo %}<li><em>Poster:</em> <img src="/i/{{ post.poster_photo }}" /></li>{% endif %}
+      {% if post.bandana_photo %}<li><em>Bandana:</em> <img src="/i/{{ post.bandana_photo }}" /></li>{% endif %}
     </ul>
   </article>
   {% endif %}
