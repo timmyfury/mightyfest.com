@@ -1,0 +1,26 @@
+--- 
+layout: fest
+title: Mighty Fest XII
+fest_date: March 28, 2015
+location: Swarthmore Community Center
+exotic_meat: Camel
+slogan: ?
+
+thor: Jordan Wagner
+thor_photo: thors/2014-Jordan-Wagner.jpg
+
+events:
+  - name: Rock Throw
+    winner: Jordan Wagner
+  - name: Arm Wrestling
+    winner: Jordan Wagner
+  - name: Hide the Hammer
+    winner: David Keenan
+  - name: Odin's Eye
+    winner: Jack Mooney
+  - name: The Wheel
+    winner: Melissa Joy Colon
+---
+
+
+ticket_photo: tickets/2013-mf10.jpg
